@@ -223,18 +223,25 @@ h4 {
 .imageDescriptionText{
     flex-basis:20rem;
     display:flex;
+    flex-direction: column;
     justify-content:center;
-    align-items:center;
     flex-grow:1;
 }
 .imageDescriptionText p{
     font-size: 1rem;
     margin:2rem;
 }
+.imageDescriptionText h3{
+    margin:2rem;
+}
 .imageDescriptionImage{
     flex-basis:30rem;
     flex-grow:1;
 }
+.smallImage{
+    flex-basis:10rem;
+}
+
 .imageDescriptionImage img{
     width:100%;
 }
