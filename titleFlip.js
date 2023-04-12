@@ -1,3 +1,4 @@
+//flip between titles
 let activeIndex = 0;
 
 const titles = document.getElementsByClassName("title");
@@ -19,6 +20,7 @@ setInterval( function () {
     })
 } , 2500);
 
+//adjust grid hover effect on page headers
 $(document).mousemove(function(event) {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
@@ -30,9 +32,8 @@ $(document).mousemove(function(event) {
     $('.gradientGrid').css('mask-image', 'radial-gradient(circle at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, black 10%, transparent 30%)');
 });
 
-
+//parallax scroll effect on main page
 //made with the assistance of chatGPT and modified to my needs
-
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   var layers = document.querySelectorAll('.featureItem');
